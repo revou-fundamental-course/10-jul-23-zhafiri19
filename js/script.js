@@ -11,7 +11,7 @@ function calculateBMI(){
     var TB = parseFloat(tinggiBadan.value)
 
     if(BB === '' || Usia === '' || TB === ''){
-        hasil.innerHTML = "Silahkan Isi Kolom Input"
+        hasil.innerHTML = "Silahkan Isi Kolom Input dengan Angka yang Valid"
         return
     }
 
@@ -28,10 +28,10 @@ function calculateBMI(){
         status = "Berat Badan Kegemukan (Obesitas)"
     }
 
-    hasil.innerHTML = "BMI Untuk " + jenisKelamin + " dengan usia anda " + Usia + " Tahun " +
-                        "<p>" + status + "</p>" + 
-                        "<p>" + BMI.toFixed(2) + "</p>" +
-                        "<p>" + "Anda Memiliki" + " " + status + " " + "</p>"
+    hasil.textContent = "BMI Untuk " + jenisKelamin + " dengan usia anda " + Usia + " Tahun " +
+                        "\n" + status + "\n" + 
+                        "\n" + BMI.toFixed(2) + "\n" +
+                        "\n" + "Anda Memiliki" + " " + status + " " + "\n"
 
 }
 
