@@ -12,25 +12,25 @@
             <div class="input-container">
                 <label for="JK">Jenis Kelamin</label>
                 <p>
-                    <input type="radio" name="JK" id="Pria" value="pria" />
+                    <input type="radio" name="JK" id="Pria" value="pria" required />
                     <label for="pria">Pria</label>
 
-                    <input type="radio" name="JK" id="Wanita" value="wanita" />
+                    <input type="radio" name="JK" id="Wanita" value="wanita" required />
                     <label for="wanita">Wanita</label>
                 </p>
             </div>
 
             <div class="input-container">
                 <label for="BB">Berat badan (kg)</label>
-                <input type="number" id="BB" placeholder="Berat badan (kg)" />
+                <input type="number" id="BB" placeholder="Berat badan (kg)" min="0" />
             </div>
             <div class="input-container">
                 <label for="Usia">Usia (tahun)</label>
-                <input type="number" id="Usia" placeholder="Usia (tahun)" />
+                <input type="number" id="Usia" placeholder="Usia (tahun)" min="0"/>
             </div>
             <div class="input-container">
                 <label for="TB">Tinggi badan</label>
-                <input type="number" id="TB" placeholder="Tinggi badan (cm)" />
+                <input type="number" id="TB" placeholder="Tinggi badan (cm)" min="0"/>
             </div>
             <button onclick="calculateBMI()">Hitung BMI</button>
             <button onclick="reset()">Reset</button>
